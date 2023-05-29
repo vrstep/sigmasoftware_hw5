@@ -1,0 +1,7 @@
+@use "../abstracts as *";
+
+$fs-nav: map-get($map: $font-sizes, $key: 300);
+
+@include medium() {
+    $fs-nav: map-get($map: $font-sizes-mobile, $key: 400);
+}
