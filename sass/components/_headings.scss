@@ -1,0 +1,11 @@
+@use "../abstracts as *";
+
+$fs-primary-heading: map-get($map: $font-sizes, $key: 700);
+@include medium() {
+    $fs-primary-heading: map-get($map: $font-sizes-mobile, $key: 700);
+}
+
+$fs-secondary-heading: map-get($map: $font-sizes, $key: 600);
+@include medium() {
+    $fs-secondary-heading: map-get($map: $font-sizes-mobile, $key: 600);
+}
