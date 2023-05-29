@@ -1,4 +1,4 @@
-@use "../abstracts as *";
+@use "../abstracts" as *;
 
 $fs-primary-heading: map-get($map: $font-sizes, $key: 700);
 @include medium() {
