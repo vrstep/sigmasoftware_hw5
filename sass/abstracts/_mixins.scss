@@ -1,0 +1,17 @@
+@mixin medium() {
+    @media (min-width: $breakpoint_medium) {
+        @content;
+    }
+}
+
+@mixin large() {
+    @media (min-width: $breakpoint_large) {
+        @content;
+    }
+}
+
+@mixin small() {
+    @media (max-width: $breakpoint_small) {
+        @content;
+    }
+}
