@@ -1,0 +1,23 @@
+$ff-text: 'Open Sans', sans-serif;
+$ff-heading: 'Poppins', sans-serif;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+$font-sizes: (
+  300: 0.875rem,
+  400: 1rem,
+  600: 2.5rem,
+  700: 3.75rem,
+);
+
+@include medium {
+  $font-sizes: (
+    300: 1rem,
+    400: 1.25rem,
+    600: 3rem,
+    700: 4.5rem,
+  )
+}
