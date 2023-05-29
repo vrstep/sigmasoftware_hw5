@@ -15,11 +15,9 @@ $font-sizes: (
   700: 3.75rem,
 );
 
-@include medium {
-  $font-sizes: (
+$font-sizes-mobile: (
     300: 1rem,
     400: 1.25rem,
     600: 3rem,
     700: 4.5rem,
-  )
-}
+)
