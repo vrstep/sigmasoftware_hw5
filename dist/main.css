@@ -62,4 +62,115 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.fs-300 {
+  font-size: 0.875rem;
+}
+
+.fs-400 {
+  font-size: 1rem;
+}
+
+.fs-600 {
+  font-size: 2.5rem;
+}
+
+.fs-700 {
+  font-size: 3.75rem;
+  line-height: 1.1;
+}
+
+@media (min-width: 45em) {
+  .fs-300 {
+    font-size: 1rem;
+  }
+  .fs-400 {
+    font-size: 1.25rem;
+  }
+  .fs-600 {
+    font-size: 3rem;
+  }
+  .fs-700 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+}
+.clr-neutral-100 {
+  color: hsl(0, 0%, 93%);
+}
+
+.bg-neutral-100 {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.clr-neutral-200 {
+  color: hsl(0, 0%, 97%);
+}
+
+.bg-neutral-200 {
+  background-color: hsl(0, 0%, 97%);
+}
+
+.clr-neutral-400 {
+  color: hsl(0, 0%, 39%);
+}
+
+.bg-neutral-400 {
+  background-color: hsl(0, 0%, 39%);
+}
+
+.clr-accent-100 {
+  color: hsl(0, 0%, 100%);
+}
+
+.bg-accent-100 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.clr-accent-400 {
+  color: hsl(24, 35%, 68%);
+}
+
+.bg-accent-400 {
+  background-color: hsl(24, 35%, 68%);
+}
+
+.clr-accent-700 {
+  color: hsl(163, 40%, 36%);
+}
+
+.bg-accent-700 {
+  background-color: hsl(163, 40%, 36%);
+}
+
+.clr-primary-400 {
+  color: hsl(0, 0%, 39%);
+}
+
+.bg-primary-400 {
+  background-color: hsl(0, 0%, 39%);
+}
+
+.clr-primary-700 {
+  color: hsl(163, 40%, 36%);
+}
+
+.bg-primary-700 {
+  background-color: hsl(163, 40%, 36%);
+}
+
+.clr-primary-900 {
+  color: hsl(0, 0%, 13%);
+}
+
+.bg-primary-900 {
+  background-color: hsl(0, 0%, 13%);
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
