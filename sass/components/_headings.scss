@@ -1,11 +1,25 @@
 @use "../abstracts" as *;
 
-$fs-primary-heading: map-get($map: $font-sizes, $key: 700);
+$fs-primary-heading: map-get($map: $font-sizes-mobile, $key: 700);
 @include medium() {
-    $fs-primary-heading: map-get($map: $font-sizes-mobile, $key: 700);
+    $fs-primary-heading: map-get($map: $font-sizes, $key: 700);
+    .fs-primary-heading {
+        font-size: $fs-primary-heading;
+        line-height: 1.1;
+    }
 }
 
-$fs-secondary-heading: map-get($map: $font-sizes, $key: 600);
+$fs-secondary-heading: map-get($map: $font-sizes-mobile, $key: 600);
 @include medium() {
-    $fs-secondary-heading: map-get($map: $font-sizes-mobile, $key: 600);
+    $fs-secondary-heading: map-get($map: $font-sizes, $key: 600);
+}
+
+.fs-primary-heading {
+    font-size: $fs-primary-heading;
+    line-height: 1.1;
+}
+
+.fs-secondary-heading {
+    font-size: $fs-secondary-heading;
+    line-height: 1.1;
 }
