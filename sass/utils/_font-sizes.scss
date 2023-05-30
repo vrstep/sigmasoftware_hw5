@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-@each $size-name, $size-value in $font-sizes {
+@each $size-name, $size-value in $font-sizes-mobile {
   .fs-#{$size-name} {
     font-size: $size-value;
     @if $size-name > 600 {
@@ -10,7 +10,7 @@
 }
 
 @include medium() {
-    @each $size-name, $size-value in $font-sizes-mobile {
+    @each $size-name, $size-value in $font-sizes {
         .fs-#{$size-name} {
           font-size: $size-value;
           @if $size-name > 600 {
