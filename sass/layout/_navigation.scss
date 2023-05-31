@@ -7,14 +7,27 @@ $fs-nav: map-get($map: $font-sizes, $key: 300);
 }
 
 .mobile-nav-toggle {
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    padding: .5em;
+    display: none;
 }
 
-.mobile-nav-toggle {
-    .icon-close {
+@include desktop() {
+    .primary-navigation {
         display: none;
+        // Just a reminder
+        // You can add animation transition and stuff like that here
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        padding: .5em;
+    }
+    
+    .mobile-nav-toggle {
+        .icon-close {
+            display: none;
+        }
     }
 }
