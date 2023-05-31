@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 $alignments: ("center", "space-between", "space-around", "space-evenly", "flex-start", "flex-end");
 
 @each $align in $alignments {
@@ -21,3 +23,14 @@ $alignments: ("center", "space-between", "space-around", "space-evenly", "flex-s
 .flex {
     display: flex;
 }
+
+// Даже не знаю куда засунуть этот класс
+.display-sm-none {
+  display: none;
+}
+
+@include medium() {
+  .display-md-inline-flex {
+    display: inline-flex;
+  }
+} 
