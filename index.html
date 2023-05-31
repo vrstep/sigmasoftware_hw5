@@ -12,9 +12,14 @@
 </head>
 <body>
 
-    <header class="primary-header">
+    <header class="primary-header margin-top">
         <div class="container">
+            <div class="flex items-center justify-center justify-space-between">
             <a href="#"><img src="images/logo.svg" alt=""></a>
+            <button class="mobile-nav-toggle">
+                <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="">
+                <img class="icon-close" src="images/icon-close.svg" alt="">
+            </button>
             <nav class="primary-navigation">
                 <ul role="list" class="nav-list">
                     <li><a href="#">home</a></li>
@@ -26,8 +31,9 @@
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
-            <button class="button button__signup button__leaf">Sign Up</button>
+            <button class="button button__signup button__leaf" style="display: none;">Sign Up</button>
         </div>
+    </div>
     </header>
 
     <main>
@@ -282,5 +288,6 @@
         <hr>
         <span>Copyright @ 2020 Brandoxide.all right reserved.</span>
     </footer>
+    <script src="js/mobile-navigation.js"></script>
 </body>
 </html>
