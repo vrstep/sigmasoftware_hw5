@@ -5,3 +5,16 @@ $fs-nav: map-get($map: $font-sizes, $key: 300);
 @include medium() {
     $fs-nav: map-get($map: $font-sizes-mobile, $key: 400);
 }
+
+.mobile-nav-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: .5em;
+}
+
+.mobile-nav-toggle {
+    .icon-close {
+        display: none;
+    }
+}
