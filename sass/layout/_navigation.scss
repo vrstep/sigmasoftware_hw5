@@ -14,13 +14,20 @@ $fs-nav: map-get($map: $font-sizes, $key: 300);
     .primary-navigation {
         display: none;
 
-        position: absolute;
+        position: fixed;
         padding: map-get($map: $sizes, $key: 24);
         inset: map-get($map: $sizes, $key: 101) map-get($map: $sizes, $key: 16) auto;
         background: clr(neutral, 100);
         border-radius: map-get($map: $sizes, $key: 8);
 
         // You can add animation transition and stuff like that here
+    }
+
+    .primary-header[data-overlay]::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / .8));
     }
 
     .nav-list {
@@ -42,6 +49,9 @@ $fs-nav: map-get($map: $font-sizes, $key: 300);
 
     .mobile-nav-toggle {
         display: block;
+        position: fixed;
+        top: map-get($map: $sizes, $key: 32);
+        right: map-get($map: $sizes, $key: 20);
         cursor: pointer;
         background: transparent;
         border: 0;

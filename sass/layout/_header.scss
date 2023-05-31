@@ -1,5 +1,5 @@
 @use "../abstracts" as *;
 
 .primary-header {
-    margin-top: map-get($map: $sizes, $key: 36);
+    padding-top: map-get($map: $sizes, $key: 36);
 }
