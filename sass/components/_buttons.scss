@@ -1,3 +1,24 @@
 @use "../abstracts" as *;
 
-$fs-button: map-get($map: $font-sizes, $key: 300);
+$fs-button: map-get($map: $font-sizes, $key: 450);
+
+.button {
+    padding: .6em 1em;
+    border: 0;
+    cursor: pointer;
+    font-family: $ff-text;
+    font-size: $fs-button;
+    font-weight: $fw-bold;
+    color: clr(neutral, 100);
+    background-color: clr(primary, 700);
+}
+
+.button__signup {
+    background-color: clr(accent, 400);
+}
+
+.button__leaf {
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
