@@ -24,6 +24,10 @@ $alignments: ("center", "space-between", "space-around", "space-evenly", "flex-s
     display: flex;
 }
 
+.gap {
+  gap: 1rem;
+}
+
 // Даже не знаю куда засунуть этот класс
 .display-sm-none {
   display: none;
