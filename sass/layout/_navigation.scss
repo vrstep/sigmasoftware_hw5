@@ -13,13 +13,31 @@ $fs-nav: map-get($map: $font-sizes, $key: 300);
 @include desktop() {
     .primary-navigation {
         display: none;
-        // Just a reminder
+
+        position: absolute;
+        padding: map-get($map: $sizes, $key: 24);
+        inset: map-get($map: $sizes, $key: 101) map-get($map: $sizes, $key: 16) auto;
+        background: clr(neutral, 100);
+        border-radius: map-get($map: $sizes, $key: 8);
+
         // You can add animation transition and stuff like that here
+    }
+
+    .nav-list {
+        display: grid;
+        gap: map-get($map: $sizes, $key: 24);
+        text-align: center;
+        font-size: $fs-nav;
+        font-weight: $fw-semibold;  
+
+        a {
+            text-decoration: none;
+            color: clr(primary, 900);
+        }
     }
 
     .primary-navigation[data-visible] {
         display: block;
-        position: fixed;
     }
 
     .mobile-nav-toggle {
