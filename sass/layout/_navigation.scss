@@ -28,6 +28,8 @@ $fs-nav: map-get($map: $font-sizes-mobile, $key: 400);
         position: fixed;
         padding: map-get($map: $sizes, $key: 24);
         inset: map-get($map: $sizes, $key: 101) map-get($map: $sizes, $key: 16) auto;
+        max-width: 25rem;
+        margin-left: auto;
         background: clr(neutral, 100);
         border-radius: map-get($map: $sizes, $key: 8);
 
