@@ -1,9 +1,9 @@
 @use "../abstracts" as *;
 
-$fs-nav: map-get($map: $font-sizes, $key: 300);
+$fs-nav: map-get($map: $font-sizes-mobile, $key: 400);
 
 @include medium() {
-    $fs-nav: map-get($map: $font-sizes-mobile, $key: 300);
+    $fs-nav: map-get($map: $font-sizes, $key: 300);
 }
 
 .mobile-nav-toggle {
@@ -13,7 +13,12 @@ $fs-nav: map-get($map: $font-sizes, $key: 300);
 .nav-list {
     display: flex;
     gap: clamp(map-get($map: $sizes, $key: 8), 1vw, map-get($map: $sizes, $key: 48));
-    font-size: $fs-nav;
+    
+    a {
+        font-size: $fs-nav;
+        color: clr(primary, 900);
+        text-decoration: none;
+    }
 }
 
 @include desktop() {
