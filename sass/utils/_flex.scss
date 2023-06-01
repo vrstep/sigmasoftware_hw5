@@ -24,8 +24,12 @@ $alignments: ("center", "space-between", "space-around", "space-evenly", "flex-s
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .gap {
-  gap: 2rem;
+  gap: var(--flex-group-gap, $flex-group-gap);
 }
 
 // Даже не знаю куда засунуть этот класс
