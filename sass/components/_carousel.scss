@@ -1,0 +1,76 @@
+@use "../abstracts" as *;
+
+.carousel {
+  position: relative;
+}
+  
+.carousel__button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+  
+.carousel__button {
+  display: inline-block;
+  border-radius: 20vmax;
+  padding: 8px;
+  box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+}
+  
+.carousel__button:active {
+  background-color: white;
+  color: clr(neutral, 400);
+}
+
+.carousel ul {
+  display: flex;
+}
+  
+.slide {
+    display: none;
+    margin-right: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    img {
+        z-index: 1;
+        margin-left: -40px;
+        margin-bottom: -120px;
+        transform: translateY(20%);
+        border: 0;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+  
+.slide[data-active] {
+  display: block;
+}
+  
+.test-border {
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1.6rem .5rem;
+    padding-left: 100px;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+.slide[data-active] {
+  animation: fadeIn 0.7s ease-in-out forwards; /* Adjust the duration and timing function to control the animation */
+}
+  
+.slide:not([data-active]) {
+  animation: fadeOut 0.7s ease-in-out forwards; /* Adjust the duration and timing function to control the animation */
+}
