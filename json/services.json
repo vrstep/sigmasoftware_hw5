@@ -1,0 +1,69 @@
+{
+    "Interior Design": [
+        {
+            "title": "Interior Design 1",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Interior Design 2",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Interior Design 3",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Interior Design 4",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Interior Design 5",
+            "content": "Dummy text"
+        }
+    ],
+    "Architecture": [
+        {
+            "title": "Architecture 1",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Architecture 2",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Architecture 3",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Architecture 4",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Architecture 5",
+            "content": "Dummy text"
+        }
+    ],
+    "Planning": [
+        {
+            "title": "Planning 1",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Planning 2",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Planning 3",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Planning 4",
+            "content": "Dummy text"
+        },
+        {
+            "title": "Planning 5",
+            "content": "Dummy text"
+        }
+    ]
+}
+
