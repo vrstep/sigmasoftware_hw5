@@ -46,14 +46,36 @@ async function main() {
     }
   }
 
-  allButton.addEventListener("click", () => renderContent("All"));
-  interiorDesignButton.addEventListener("click", () =>
-    renderContent("Interior Design")
-  );
-  architectureButton.addEventListener("click", () =>
-    renderContent("Architecture")
-  );
-  planningButton.addEventListener("click", () => renderContent("Planning"));
+  allButton.classList.add('active');
+
+  allButton.addEventListener("click", () => {
+    allButton.classList.add('active');
+    interiorDesignButton.classList.remove('active');
+    architectureButton.classList.remove('active');
+    planningButton.classList.remove('active');
+    renderContent('All');
+  });
+  interiorDesignButton.addEventListener("click", () => {
+    allButton.classList.remove('active');
+    interiorDesignButton.classList.add('active');
+    architectureButton.classList.remove('active');
+    planningButton.classList.remove('active');
+    renderContent('Interior Design');
+  });
+  architectureButton.addEventListener("click", () => {
+    allButton.classList.remove('active');
+    interiorDesignButton.classList.remove('active');
+    architectureButton.classList.add('active');
+    planningButton.classList.remove('active');
+    renderContent('Architecture');
+  });
+  planningButton.addEventListener("click", () => {
+    allButton.classList.remove('active');
+    interiorDesignButton.classList.remove('active');
+    architectureButton.classList.remove('active');
+    planningButton.classList.add('active');
+    renderContent('Planning');
+  });  
 
   renderContent("All");
 }
