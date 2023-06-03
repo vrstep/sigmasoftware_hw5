@@ -216,6 +216,32 @@ body {
   animation: fadeOut 0.7s ease-in-out forwards; /* Adjust the duration and timing function to control the animation */
 }
 
+#content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.item-container {
+  padding: 0.9rem 2rem;
+  border: 0;
+  width: calc(33.33% - 33.3333333333px);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+}
+
+.button__service {
+  border-radius: 20px;
+}
+
+button.active {
+  border: 4px solid #37806B;
+  background-color: white;
+  color: hsl(163, 40%, 36%);
+}
+
 .mobile-nav-toggle {
   display: none;
 }
