@@ -44,7 +44,54 @@ async function main() {
         contentContainer.appendChild(containerElement);
       });
     }
+
+    setTimeout(() => {
+      document.querySelectorAll('.item-container').forEach(item => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+      });
+    }, 0);
   }
+
+
+  /* This is modifyied renderContent function to add icons to the content
+  function renderContent(category) {
+  contentContainer.innerHTML = "";
+  
+  if (category === 'All') {
+    for (let key in data) {
+      const item = data[key][0];
+      const containerElement = document.createElement("div");
+      containerElement.className = "item-container";
+      const iconElement = document.createElement("img");
+      iconElement.src = "<URL>";
+      const titleElement = document.createElement("h2");
+      titleElement.textContent = item.title;
+      const contentElement = document.createElement("p");
+      contentElement.textContent = item.content;
+      containerElement.appendChild(iconElement);
+      containerElement.appendChild(titleElement);
+      containerElement.appendChild(contentElement);
+      contentContainer.appendChild(containerElement);
+    }
+  } else {
+    data[category].forEach(item => {
+      const containerElement = document.createElement("div");
+      containerElement.className = "item-container";
+      const iconElement = document.createElement("img");
+      iconElement.src = "<URL>";
+      const titleElement = document.createElement("h2");
+      titleElement.textContent = item.title;
+      const contentElement = document.createElement("p");
+      contentElement.textContent = item.content;
+      containerElement.appendChild(iconElement);
+      containerElement.appendChild(titleElement);
+      containerElement.appendChild(contentElement);
+      contentContainer.appendChild(containerElement);
+    });
+  }
+}
+  */
 
   allButton.classList.add('active');
 
