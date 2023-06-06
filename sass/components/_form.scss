@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+form {
+    width: 48.25rem;
+}
+
+input {
+    background-color: clr(neutral, 200);
+    padding: .65rem;
+    padding-left: 1.25rem;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
