@@ -8,7 +8,30 @@
     z-index: 2;
 }
 
+.primary-header {
+    position: sticky;
+    top: 0;
+    padding-top: map-get($map: $sizes, $key: 36);
+    transition: background-color 500ms;
+    z-index: 2;
+}
+
 .primary-header.sticking {
     background-color: hsla(163, 40%, 38%, 1);
     // color: clr(neutral, 200);
 }
+
+// @include medium() {
+//     .primary-header {
+//         position: sticky;
+//         top: 0;
+//         padding-top: map-get($map: $sizes, $key: 36);
+//         transition: background-color 500ms;
+//         z-index: 2;
+//     }
+
+//     .primary-header.sticking {
+//         background-color: hsla(163, 40%, 38%, 1);
+//         // color: clr(neutral, 200);
+//     }
+// }
